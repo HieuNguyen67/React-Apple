@@ -26,7 +26,7 @@ const Header = (props) => {
         fixed="top"
       >
         <Container className="my-2">
-          <Navbar.Brand href="/">
+          <Navbar.Brand to="/">
             <img
               alt=""
               src={Logo}
