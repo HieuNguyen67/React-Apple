@@ -50,7 +50,7 @@ const Apple4 = () => {
                   "The innovative new design features back glass that has color infused throughout the material. A custom dual ion-exchange process for the glass, and an aerospace-grade aluminum enclosure, help make iPhone 15 incredibly durable.",
                 ]}
                 typeSpeed={20}
-                loop={false}
+                loop
               />
             </h4>
           </Col>
