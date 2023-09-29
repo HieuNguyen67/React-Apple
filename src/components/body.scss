@@ -1,0 +1,156 @@
+.boxx {
+  height: 500rem;
+}
+.boxxx {
+  height: 11rem;
+  border: 1px solid black;
+}
+.color {
+  background-color: #0033cc;
+  color: white;
+}
+
+.white {
+  color: white;
+}
+.margin {
+  margin-left: 20rem;
+}
+.margin1 {
+  margin-left: 2rem;
+}
+.font {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.display {
+  position: fixed;
+}
+.Login {
+  top: 10rem;
+}
+@media (min-width: 1400px) {
+  .fontt {
+    font-size: 3.5rem;
+  }
+  .fonttt {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .fonts {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .fonts {
+    font-size: 0.6rem;
+  }
+
+  .sizedangnhap {
+    font-size: 1.1rem;
+  }
+  .me {
+    font-size: 0.7rem;
+  }
+  .anh {
+    width: 40%;
+    height: 40%;
+  }
+
+  .fontttt {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 576px) {
+}
+.zind {
+  position: fixed;
+  z-index: inherit;
+}
+.box1 {
+  border: 1px solid black;
+}
+.decorate {
+  text-decoration: none;
+}
+.boxQR {
+  border: 1px ridge lightgray;
+  height: 14rem;
+}
+.fss {
+  font-size: 0.8rem;
+}
+.btn-back-to-top {
+  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  z-index: 99;
+}
+/* Styles for the Slideshow component */
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.indicators button {
+  background-color: rgb(225, 225, 225);
+  color: #000;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0 3px;
+  width: 1rem;
+  height: 1.3rem;
+  border-radius: 50%;
+}
+
+.indicators button.active {
+  background-color: #000000;
+  color: #fff;
+  width: 1rem;
+  height: 1.3rem;
+}
+.boxApple3 {
+  height: 150rem;
+
+  background-image: linear-gradient(180deg, #f7f7f8, white);
+}
+.back {
+  border-radius: 50%;
+  border: 2px solid #2d0000;
+}
