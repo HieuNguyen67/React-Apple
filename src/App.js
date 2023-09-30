@@ -22,41 +22,28 @@ function App() {
 
   return (
     <>
-    
-    <div className="app-container">
+      <div className="app-container">
+        <Header />
+        <br />
+        <br />
+        <br />
+        <br />
+        <BackToTop />
 
-     <Header />
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-   <BackToTop/>
-    
-    
-    
-      <Routes>
-        
-        <Route path="/"  element={<HomeApple/>} />     
-        <Route path="/user" element={<Login/>} /> 
-        <Route path="/4" element={<LoginQR/>} /> 
-        <Route path="/5" element={<LoginwithEmail/>} /> 
-        <Route path="/10" element={<LoginwithEmail1/>} /> 
-        <Route path="/SignUp" element={<SignUp/>} /> 
-        <Route path="/SignUpWithSDT" element={<SignUpWithSDT/>} /> 
-        <Route path="/SignUpWithEmail" element={<SignUpWithEmail/>} /> 
-        <Route path="/Xiaomi" element={<Xiaomi/>} />
+        <Routes>
+          <Route path="/React-Apple" element={<HomeApple />} />
+          <Route path="/user" element={<Login />} />
+          <Route path="/4" element={<LoginQR />} />
+          <Route path="/5" element={<LoginwithEmail />} />
+          <Route path="/10" element={<LoginwithEmail1 />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/SignUpWithSDT" element={<SignUpWithSDT />} />
+          <Route path="/SignUpWithEmail" element={<SignUpWithEmail />} />
+          <Route path="/Xiaomi" element={<Xiaomi />} />
+        </Routes>
 
-
-
-      </Routes>
-      
         {/* <HomeApple/> */}
-      
-    </div>
-   
-   
-    
-      
+      </div>
     </>
   );
 }

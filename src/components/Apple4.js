@@ -2,13 +2,18 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import ReactTyped from "react-typed";
-
+import * as React from "react";
 import video from "../assets/video/large_2x.mp4";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import InvertColorsIcon from "@mui/icons-material/InvertColors";
+import Modal from "react-bootstrap/Modal";
+import "./body.scss";
+import color from "../assets/image/color.png";
+import creatingcolor from "../assets/image/creatingcolor.png";
+import adesign from "../assets/image/Adesign.png";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -25,6 +30,9 @@ const Apple4 = () => {
       control.start("hidden");
     }
   }, [control, inView]);
+  const [show, setshow] = React.useState(false);
+  const handleClose = () => setshow(false);
+  const handleShow = () => setshow(true);
 
   return (
     <>
@@ -96,6 +104,7 @@ const Apple4 = () => {
             <Col></Col>
             <Col className="mt-md-5 col-md-3 col-5 mt-5">
               <Button
+                onClick={handleShow}
                 variant="dark"
                 className="shadow col-md-12 col-12 mt-md-5 py-md-3 py-md-1 pt-3 rounded-5"
               >
@@ -104,6 +113,24 @@ const Apple4 = () => {
             </Col>
             <Col></Col>
           </Row>
+        </div>
+        <div>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            className="rounded-5"
+            size="xl"
+          >
+            <Modal.Header closeButton></Modal.Header>
+            <Modal.Body>
+              <img className="d-block w-100  " src={color} />
+              <br />
+              <img className="d-block w-100 " src={creatingcolor} />
+              <br />
+              <img className="d-block w-100 " src={adesign} />
+              <br />
+            </Modal.Body>
+          </Modal>
         </div>
       </motion.div>
     </>
