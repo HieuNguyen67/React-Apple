@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/React-Apple/static/css/main.cc32996c.css",
-    "main.js": "/React-Apple/static/js/main.99c7bb72.js",
+    "main.js": "/React-Apple/static/js/main.d6544f2a.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Apple/static/js/787.28cb0dcd.chunk.js",
     "static/media/iphone.mp4": "/React-Apple/static/media/iphone.87d84958d189d361bd12.mp4",
     "static/media/large_2x.mp4": "/React-Apple/static/media/large_2x.617ecb874274a439d190.mp4",
     "static/media/iphone2.png": "/React-Apple/static/media/iphone2.a6313e1eb0904de1ea0a.png",
     "static/media/dynamic_island_hw__bq0da9ahwxpy_large.png": "/React-Apple/static/media/dynamic_island_hw__bq0da9ahwxpy_large.a8c841514aec58350e20.png",
+    "static/media/creatingcolor.png": "/React-Apple/static/media/creatingcolor.87eed8f6c1034383640c.png",
+    "static/media/color.png": "/React-Apple/static/media/color.c791dd4debed96bfc642.png",
     "static/media/iphone3.png": "/React-Apple/static/media/iphone3.1c6b8f1d6649d1ca663d.png",
     "static/media/iphone1.png": "/React-Apple/static/media/iphone1.d7a0ffe69c5170a447d2.png",
+    "static/media/Adesign.png": "/React-Apple/static/media/Adesign.1f7957160c7e378a85b3.png",
     "static/media/yellow.png": "/React-Apple/static/media/yellow.9a2536d2d6accd885eb4.png",
     "static/media/pink.png": "/React-Apple/static/media/pink.5b1ffeceb51c791f96bb.png",
     "static/media/titan.png": "/React-Apple/static/media/titan.2d6e7e893630b7b4263c.png",
@@ -17,11 +20,11 @@
     "static/media/logo.svg": "/React-Apple/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-Apple/index.html",
     "main.cc32996c.css.map": "/React-Apple/static/css/main.cc32996c.css.map",
-    "main.99c7bb72.js.map": "/React-Apple/static/js/main.99c7bb72.js.map",
+    "main.d6544f2a.js.map": "/React-Apple/static/js/main.d6544f2a.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Apple/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc32996c.css",
-    "static/js/main.99c7bb72.js"
+    "static/js/main.d6544f2a.js"
   ]
 }
