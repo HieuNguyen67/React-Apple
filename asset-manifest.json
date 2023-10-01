@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/React-Apple/static/css/main.cc32996c.css",
-    "main.js": "/React-Apple/static/js/main.d6544f2a.js",
+    "main.css": "/React-Apple/static/css/main.78e0e47f.css",
+    "main.js": "/React-Apple/static/js/main.c8b489fd.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Apple/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Introducing iPhone 15 - WOW - Apple.mp4": "/React-Apple/static/media/Introducing iPhone 15 - WOW - Apple.c276dfaa96026b052913.mp4",
     "static/media/iphone.mp4": "/React-Apple/static/media/iphone.87d84958d189d361bd12.mp4",
     "static/media/large_2x.mp4": "/React-Apple/static/media/large_2x.617ecb874274a439d190.mp4",
     "static/media/iphone2.png": "/React-Apple/static/media/iphone2.a6313e1eb0904de1ea0a.png",
@@ -19,12 +20,12 @@
     "static/media/Logo1.png": "/React-Apple/static/media/Logo1.4a44e02494479c250262.png",
     "static/media/logo.svg": "/React-Apple/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-Apple/index.html",
-    "main.cc32996c.css.map": "/React-Apple/static/css/main.cc32996c.css.map",
-    "main.d6544f2a.js.map": "/React-Apple/static/js/main.d6544f2a.js.map",
+    "main.78e0e47f.css.map": "/React-Apple/static/css/main.78e0e47f.css.map",
+    "main.c8b489fd.js.map": "/React-Apple/static/js/main.c8b489fd.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Apple/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc32996c.css",
-    "static/js/main.d6544f2a.js"
+    "static/css/main.78e0e47f.css",
+    "static/js/main.c8b489fd.js"
   ]
 }
