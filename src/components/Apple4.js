@@ -105,8 +105,8 @@ const Apple4 = () => {
             <Col className="mt-md-5 col-md-3 col-5 mt-5">
               <Button
                 onClick={handleShow}
-                variant="dark"
-                className="shadow col-md-12 col-12 mt-md-5 py-md-3 py-md-1 pt-3 rounded-5"
+                variant="outline-dark"
+                className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5"
               >
                 <h3 className="fontttt ">Go deeper on design</h3>
               </Button>
@@ -118,8 +118,9 @@ const Apple4 = () => {
           <Modal
             show={show}
             onHide={handleClose}
-            className="rounded-5"
+            className="rounded-5 "
             size="xl"
+            
           >
             <Modal.Header closeButton></Modal.Header>
             <Modal.Body>
