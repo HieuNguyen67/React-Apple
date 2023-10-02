@@ -1,5 +1,6 @@
 import './body.scss';
 import Apple4 from './Apple4';
+import Apple5 from './Apple5';
 const Apple3=()=>{
 
     return(<>
@@ -9,6 +10,7 @@ const Apple3=()=>{
         
         <Apple4/>
         
+        <Apple5/>
         </div>
     </div>
     

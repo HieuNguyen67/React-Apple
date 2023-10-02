@@ -37,6 +37,11 @@
     font-size: 5rem;
     font-weight: bold;
   }
+    .posi {
+      position: relative;
+      bottom: 250px;
+  
+    }
 }
 
 @media (max-width: 992px) {
@@ -54,7 +59,9 @@
   .fonts {
     font-size: 0.6rem;
   }
-
+  .sizeicon{
+    font-size: 10px;
+  }
 
   .sizedangnhap {
     font-size: 1.1rem;
@@ -69,10 +76,18 @@
 
   .fontttt {
     font-size: 0.7rem;
+  }.fonttttt {
+    font-size: 0.9rem;
   }
+  .posi{
+    position: relative;
+    bottom:60px
+  }
+  
   
 }
 @media (min-width: 576px) {
+  
 }
 .zind {
   position: fixed;
@@ -80,6 +95,7 @@
 }
 .box1 {
   border: 1px solid black;
+  
 }
 .decorate {
   text-decoration: none;
@@ -148,9 +164,9 @@
   height: 1.3rem;
 }
 .boxApple3 {
-  height: 150rem;
+  height: 250rem;
 
-  background-image: linear-gradient(180deg, #f7f7f8, white);
+  background-image: linear-gradient( #f7f7f8,white,white, rgb(255, 255, 255));
 }
 .back {
   border-radius: 50%;
@@ -163,4 +179,11 @@
 }
 .watch{
   height: 5px;
+}
+
+.black{
+  color: black;
+}
+.ri{
+  left: 25px;
 }

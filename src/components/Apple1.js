@@ -41,7 +41,7 @@ const Apple1 = () => {
     <Container>
     <div>
       <Row>
-        <Col></Col>
+        <Col/>
         <Col></Col>
         <Col ></Col>
         <Col md={3} sm={3} xs={6}><Nav.Link>

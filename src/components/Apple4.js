@@ -14,6 +14,7 @@ import "./body.scss";
 import color from "../assets/image/color.png";
 import creatingcolor from "../assets/image/creatingcolor.png";
 import adesign from "../assets/image/Adesign.png";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -37,13 +38,13 @@ const Apple4 = () => {
   return (
     <>
       <motion.div
-        className=" col-12"
+        className=" col-12 mb-5 pb-md-5"
         ref={ref}
         variants={boxVariant}
         initial="hidden"
         animate={control}
       >
-        <div className="pt-md-5 pt-4">
+        <div className="pt-md-5 pt-4 ">
           <Col className="col-8 pt-md-5">
             <h1 className="text-start fonttt">
               Color through and through. Tough all around.
@@ -102,13 +103,15 @@ const Apple4 = () => {
         <div className="mt-md-5">
           <Row>
             <Col></Col>
-            <Col className="mt-md-5 col-md-3 col-5 mt-5">
+            <Col className="mt-md-5 col-md-4 col-6 mt-5">
               <Button
                 onClick={handleShow}
                 variant="outline-dark"
                 className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5"
               >
-                <h3 className="fontttt ">Go deeper on design</h3>
+                <h3 className="fontttt ">
+                  Go deeper on design <AddCircleIcon color="primary" />
+                </h3>
               </Button>
             </Col>
             <Col></Col>
@@ -120,7 +123,6 @@ const Apple4 = () => {
             onHide={handleClose}
             className="rounded-5 "
             size="xl"
-            
           >
             <Modal.Header closeButton></Modal.Header>
             <Modal.Body>
