@@ -18,7 +18,7 @@ import manpink from "../assets/image/manpink.jpg";
 import womanred from "../assets/image/womanred.jpg";
 import womancamera from "../assets/image/womancamera.jpg";
 import { Container } from "@mui/system";
-
+import CancelIcon from "@mui/icons-material/Cancel";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -112,9 +112,17 @@ const Apple5 = () => {
             className="rounded-5 "
             size="xl"
           >
-            <Modal.Header closeButton></Modal.Header>
             <Modal.Body>
               <Container>
+                <Row>
+                  <Col></Col>
+                  <Col className="col-md-11 col-9"></Col>
+                  <Col className="ms-md-4">
+                    <button onClick={handleClose} className="fix ">
+                      <CancelIcon fontSize="large" />
+                    </button>
+                  </Col>
+                </Row>
                 <div className="mt-md-5 pt-md-5">
                   <Col className="">
                     <h1 className="text-center fonttz">
@@ -271,7 +279,6 @@ const Apple5 = () => {
                           autoplay="autoplay"
                           muted="muted"
                           loop="loop"
-                          
                         >
                           <source src={video} type="video/mp4" />
                         </video>
