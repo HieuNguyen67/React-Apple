@@ -1,5 +1,5 @@
 .boxx {
-  height: 500rem;
+  height: 700rem;
 }
 .boxxx {
   height: 11rem;
@@ -37,10 +37,25 @@
     font-size: 5rem;
     font-weight: bold;
   }
+  .fonttz{
+    font-size: 4rem;
+      font-weight: bold;
+  }
     .posi {
       position: relative;
       bottom: 250px;
   
+    }
+    .poo{
+      bottom:200px; 
+    }
+    .sizemore{
+      font-size: 3rem;
+    }
+    .rela{
+      position: relative;
+      right: 100px;
+      top: 100px;
     }
 }
 
@@ -83,7 +98,20 @@
     position: relative;
     bottom:60px
   }
-  
+  .sizex{
+    width: 35px;
+    height: 35px;
+  }
+  .sizemore{
+    font-size: 1.3rem;
+  }
+    .sizemore1 {
+      font-size: 1rem;
+    }
+  .rela{
+    position: relative;
+    right: 50px;
+  }
   
 }
 @media (min-width: 576px) {
