@@ -91,7 +91,7 @@ const Apple5 = () => {
         <div className="position-relative poo">
           <Row>
             <Col></Col>
-            <Col className=" col-md-4 col-6">
+            <Col className=" col-md-4 col-7">
               <Button
                 onClick={handleShow}
                 variant="outline-dark"
