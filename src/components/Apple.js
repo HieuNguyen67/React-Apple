@@ -15,7 +15,7 @@ const HomeApple = () => {
 
   return (
     <>
-      <div className="boxx ">
+      <div className=" ">
         <video className="col-12" autoplay="autoplay" muted="muted">
           <source src={video} type="video/mp4" />
         </video>

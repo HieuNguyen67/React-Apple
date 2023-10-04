@@ -1,6 +1,4 @@
-.boxx {
-  height: 700rem;
-}
+
 .boxxx {
   height: 11rem;
   border: 1px solid black;
@@ -33,23 +31,11 @@
   top: 10rem;
 }
 @media (max-width: 1200px) {
-  .boxApple9 {
-    height: 105rem;
-
-    background-color: #000;
-  }}
-@media (min-width: 1200px) {
-  .boxApple3 {
-      height: 530rem;
   
-      background-image: linear-gradient(#f7f7f8, white, white, rgb(255, 255, 255));
-    
-    }
-        .boxApple9 {
-          height: 105rem;
-    
-          background-color: #000;
-        }
+}
+ 
+@media (min-width: 1200px) {
+       
         
   .fontt {
     font-size: 3.5rem;
@@ -101,11 +87,6 @@
   .fonts {
     font-size: 0.6rem;
   }
-    .boxApple9 {
-      height: 85rem;
-  
-      background-color: #000;
-    }
 }
 
 @media (max-width: 576px) {
@@ -163,12 +144,7 @@
     position: relative;
     bottom: 50px;
   }
-    .boxApple9 {
-      height: 40rem;
-  
-      background-color: #000;
-    }
-  
+   
 }
 @media (min-width: 576px) {
   
@@ -275,3 +251,15 @@
   background-color:transparent;
 }
 
+ 
+
+ .boxApple3 {
+  
+   background-image: linear-gradient(#f7f7f8, white, white, rgb(255, 255, 255));
+
+ }
+ .boxApple9 {
+
+
+   background-color: rgb(0, 0, 0);
+ }
