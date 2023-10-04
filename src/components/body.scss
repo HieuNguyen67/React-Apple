@@ -13,6 +13,9 @@
 .white {
   color: white;
 }
+.grey{
+  color: #818186;
+}
 .margin {
   margin-left: 20rem;
 }
@@ -29,7 +32,25 @@
 .Login {
   top: 10rem;
 }
-@media (min-width: 1400px) {
+@media (max-width: 1200px) {
+  .boxApple9 {
+    height: 105rem;
+
+    background-color: #000;
+  }}
+@media (min-width: 1200px) {
+  .boxApple3 {
+      height: 530rem;
+  
+      background-image: linear-gradient(#f7f7f8, white, white, rgb(255, 255, 255));
+    
+    }
+        .boxApple9 {
+          height: 105rem;
+    
+          background-color: #000;
+        }
+        
   .fontt {
     font-size: 3.5rem;
   }
@@ -38,7 +59,7 @@
     font-weight: bold;
   }
   .fonttz{
-    font-size: 4rem;
+    font-size: 3rem;
       font-weight: bold;
   }
     .posi {
@@ -57,6 +78,17 @@
       right: 100px;
       top: 100px;
     }
+        .all {
+          bottom: 700px;
+        }
+                 .count {
+                   font-size: 100px;
+                   font-weight: bold;
+                 }
+  .hours{
+    position: relative;
+    bottom: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -69,7 +101,13 @@
   .fonts {
     font-size: 0.6rem;
   }
+    .boxApple9 {
+      height: 85rem;
+  
+      background-color: #000;
+    }
 }
+
 @media (max-width: 576px) {
   .fonts {
     font-size: 0.6rem;
@@ -112,6 +150,24 @@
     position: relative;
     right: 50px;
   }
+     
+    .sizemores {
+      font-size: 0.7rem;
+      bottom: 155px;
+    }
+        .count {
+          font-size: 50px;
+          font-weight: bold;
+        }
+  .hours{
+    position: relative;
+    bottom: 50px;
+  }
+    .boxApple9 {
+      height: 40rem;
+  
+      background-color: #000;
+    }
   
 }
 @media (min-width: 576px) {
@@ -191,11 +247,8 @@
   width: 1rem;
   height: 1.3rem;
 }
-.boxApple3 {
-  height: 250rem;
 
-  background-image: linear-gradient( #f7f7f8,white,white, rgb(255, 255, 255));
-}
+
 .back {
   border-radius: 50%;
   border: 2px solid #2d0000;
@@ -221,3 +274,4 @@
   border: 0px solid white;
   background-color:transparent;
 }
+

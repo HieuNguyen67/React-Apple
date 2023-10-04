@@ -16,6 +16,7 @@
     "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.2.2",

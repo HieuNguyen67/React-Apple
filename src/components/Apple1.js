@@ -45,7 +45,7 @@ const Apple1 = () => {
         <Col></Col>
         <Col ></Col>
         <Col md={3} sm={3} xs={6}><Nav.Link>
-        <button type="button" className="col-12 btn btn-dark rounded-4 mt-4 text-center shadow" >Pre-order</button>
+        <button type="button" className="col-12 btn btn-dark rounded-4 mt-4 text-center shadow" >Buy</button>
         </Nav.Link></Col>
         <Col></Col>
         <Col></Col>
