@@ -69,7 +69,7 @@ const Apple10 = () => {
              </Col>
             <Col />
           </Row>
-        </div>
+        </div><br/><br/>
       </motion.div>
     </>
   );

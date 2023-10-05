@@ -20,6 +20,8 @@ const Apple3=()=>{
             <Slider />
 
             <Apple8 />
+
+            
           </div>
         </div>
       </>

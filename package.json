@@ -28,7 +28,8 @@
     "react-typed": "^1.2.0",
     "sass": "^1.68.0",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yet-another-react-lightbox": "^3.12.3"
   },
   "scripts": {
     "start": "react-scripts start",

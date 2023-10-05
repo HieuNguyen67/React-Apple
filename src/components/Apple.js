@@ -9,6 +9,7 @@ import Apple3 from "./Apple3";
 import Apple9 from "./Apple9";
 import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
+import Apple11 from './Apple11';
 const HomeApple = () => {
 
 
@@ -33,6 +34,10 @@ const HomeApple = () => {
       <Apple3 />
 
       <Apple9 />
+
+      <Apple11/>
+
+    
     </>
   );
 };

@@ -16,9 +16,10 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Button from "react-bootstrap/Button";
 import color from "../assets/image/dd_focus__ckerb2vuk8r6_large.jpg";
 import woman from "../assets/image/dd_photonic__enur2ohg6emq_large.jpg";
-import icon from "../assets/image/dd_icon_telephoto__bklfurjy2w2q_large.png";
-import man from "../assets/image/dd_zoom__jxm6768epgii_large.jpg";
 
+import man from "../assets/image/dd_zoom__jxm6768epgii_large.jpg";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import dance from "../assets/image/dd_pinch__fft66fhthgi2_large.jpg";
 
 import { Container } from "@mui/system";
@@ -95,6 +96,19 @@ const Slider = () => {
   const [show, setshow] = useState(false);
   const handleShow = () => setshow(true);
   const handleClose = () => setshow(false);
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen=()=>setOpen(true);
+  const handleCloseOpen=()=>setOpen(false)
+  const slides = [
+    { src: one },
+    { src: two },
+    { src: three },
+    { src: four },
+    { src: five },
+    { src: six },
+    { src: seven },
+  ];
   return (
     <motion.div
       className=" col-12 mb-md-5 pb-5 "
@@ -123,6 +137,7 @@ const Slider = () => {
           infinite={true}
           partialVisible={false}
           dotListClass="custom-dot-list-style"
+          className="cursor"
         >
           {sliderImageUrl.map((imageUrl, index) => {
             return (
@@ -131,11 +146,18 @@ const Slider = () => {
                   src={imageUrl.url}
                   alt="movie"
                   className="d-block w-100 "
+                  onClick={handleOpen}
                 />
               </div>
             );
           })}
         </Carousel>
+        <Lightbox
+          open={open}
+          close={handleCloseOpen}
+          slides={slides}
+          className="d-block w-100 "
+        />
       </div>
 
       <div className="">

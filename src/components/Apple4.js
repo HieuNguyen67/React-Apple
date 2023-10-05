@@ -1,5 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import ReactTyped from "react-typed";
 import * as React from "react";
@@ -11,10 +12,20 @@ import DiamondIcon from "@mui/icons-material/Diamond";
 import InvertColorsIcon from "@mui/icons-material/InvertColors";
 import Modal from "react-bootstrap/Modal";
 import "./body.scss";
-import color from "../assets/image/color.png";
+import color from "../assets/image/dd_colors__ee640q5kx2uu_large.jpg";
 import creatingcolor from "../assets/image/creatingcolor.png";
 import adesign from "../assets/image/Adesign.png";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import CancelIcon from "@mui/icons-material/Cancel";
+import woman from "../assets/image/dd_chemistry__bjfbpo191wpe_large.jpg";
+import icon from "../assets/image/dd_icon_telephoto__bklfurjy2w2q_large.png";
+import man from "../assets/image/dd_main__e3h2l832qdg2_large.jpg";
+import onex from "../assets/image/1x.png";
+import dance from "../assets/image/dd_beautiful__dyi0uwc0bsq6_large.jpg";
+import halfx from "../assets/image/0.5x.png";
+import manpink from "../assets/image/manpink.jpg";
+import womanred from "../assets/image/womanred.jpg";
+import womancamera from "../assets/image/womancamera.jpg";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -124,14 +135,87 @@ const Apple4 = () => {
             className="rounded-5 "
             size="xl"
           >
-            <Modal.Header closeButton></Modal.Header>
             <Modal.Body>
-              <img className="d-block w-100  " src={color} />
-              <br />
-              <img className="d-block w-100 " src={creatingcolor} />
-              <br />
-              <img className="d-block w-100 " src={adesign} />
-              <br />
+              <Container>
+                <Row>
+                  <Col></Col>
+                  <Col className="col-md-11 col-9"></Col>
+                  <Col className="ms-md-4">
+                    <button onClick={handleClose} className="fix ">
+                      <CancelIcon fontSize="large" />
+                    </button>
+                  </Col>
+                </Row>
+                <div className="mt-4 mb-5">
+                  <Row>
+                    <Col></Col>
+                    <Col className="col-md-8 col-12">
+                      <h1 className="text-start fonttz">
+                        Color through and through. Tough all around.
+                      </h1>
+                    </Col>
+                    <Col></Col>
+                  </Row>
+                </div>
+
+                <div>
+                  <Row>
+                    <Col></Col>
+                    <Col className="col-md-8 col-12">
+                      <img className="d-block w-100 rounded-3" src={color} />
+                    </Col>
+                    <Col></Col>
+                  </Row>
+                </div>
+                <div className="mt-5 mb-5 pt-md-5 ">
+                  <Row>
+                    <Col></Col>
+                    <Col className="col-md-8 col-12">
+                      <h1 className="text-start ">
+                        Creating color through chemistry.
+                      </h1>
+                      <br />
+                      <h5 className="text-secondary fontttt">
+                        <b className="black">
+                          Superfine metallic ions embed color into the glass{" "}
+                        </b>
+                        — with a unique formulation for each color. Then the
+                        glass is polished with nanocrystalline particles and
+                        etched to create a textured matte finish.
+                      </h5>
+                    </Col>
+                    <Col></Col>
+                  </Row>
+                </div>
+                <div className="">
+                  <img className="d-block w-100 rounded-3" src={woman} />
+                </div>
+                <div className="mt-5">
+                  <Row>
+                    <Col className="mt-md-5 pt-md-5 ">
+                      <div className=" ms-md-5  mt-md-5 pt-md-5 ">
+                        <h1 className="col-8">
+                          A design that feels just right.
+                        </h1>
+                        <h5 className="text-start col-9 text-secondary fontttt mt-3">
+                          The aerospace‑grade aluminum frame is highly durable,
+                          and{" "}
+                          <b className="black">
+                            the new contoured edges feel even better in your
+                            hand.
+                          </b>
+                        </h5>
+                      </div>
+                    </Col>
+                    <Col className="col-12 col-md-6 mt-3" md={{ order: "first" }}>
+                      <img
+                        className="d-block w-100  mt-md-5  mt-4"
+                        src={dance}
+                      />
+                    </Col>
+                  </Row>
+                </div>
+              </Container>
             </Modal.Body>
           </Modal>
         </div>
