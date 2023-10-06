@@ -275,9 +275,30 @@
 }
 .boxGrey1 {
   background-color: #f7f7f8;
-  height: 300rem;
+ 
 }
 .inboxgrey{
   background-color: white;
 
+}.inboxgrey1 {
+  background-color: #f5f5f7;
+
+}
+.boxApple13{
+  height: 300rem;
+    background-image: linear-gradient(white, #f5f5f7,#f5f5f7,#f5f5f7);
+}
+.backs{
+    background-color: #f5f5f7;
+}
+
+.accordion-button.collapsed {
+  
+  background-color: #f5f5f7;
+  
+}
+.card{
+  width: 20rem;
+      height: 18rem;
+      border: 0px solid white;
 }

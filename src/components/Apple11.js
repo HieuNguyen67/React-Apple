@@ -19,32 +19,32 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import dance from "../assets/image/dd_charger__cp1yvs3potea_large-removebg-preview.png";
 import apple from "../assets/image/2023-10-06_003512.png";
 import values from "../assets/image/values__bhdzybdgpkxe_large.jpg";
-
+import ios17 from "../assets/image/ios17__e2zdgdkbpjue_large.jpg"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-
 import "./body.scss";
+import Apple13 from "./Apple13";
 
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple11 = () => {
-     const [show, setshow] = useState(false);
-     const handleClose = () => setshow(false);
-     const handleShow = () => setshow(true);
+  const [show, setshow] = useState(false);
+  const handleClose = () => setshow(false);
+  const handleShow = () => setshow(true);
 
-       const control = useAnimation();
-       const [ref, inView] = useInView();
+  const control = useAnimation();
+  const [ref, inView] = useInView();
 
-       useEffect(() => {
-         if (inView) {
-           control.start("visible");
-         } else {
-           control.start("hidden");
-         }
-       }, [control, inView]);
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
     <>
       <div className="boxApple11">
@@ -188,20 +188,19 @@ const Apple11 = () => {
           </div>
         </div>
       </div>
-      <div className="boxGrey1">
+      <div className="boxGrey1 ">
         <div className="container">
+          <div className="pt-5 pb-md-5 col-11 mx-auto  mt-5 pt-md-5">
+            <img className="d-block w-100 rounded-4" src={apple} />
+          </div>
           <motion.div
-            className=" col-11 mx-auto mt-5 pt-md-5 my-3"
+            className=" col-11 mx-auto my-3 "
             ref={ref}
             variants={boxVariant}
             initial="hidden"
             animate={control}
           >
-            <div className="pt-5 pb-md-5">
-              <img className="d-block w-100 rounded-5" src={apple} />
-            </div>
-
-            <div className="pt-5 mt-5 inboxgrey container rounded-5 pb-5 ">
+            <div className="pt-5 mt-5 inboxgrey container rounded-4 pb-5 ">
               <Row className="d-flex flex-column ms-md-5 ps-md-5 mt-md-5 mt-2 pt-md-5">
                 <Col>
                   <img className="d-block w-10 " src={values} />
@@ -242,7 +241,62 @@ const Apple11 = () => {
                 </Col>
               </Row>
             </div>
+
+            <div className="pt-5 mt-5 inboxgrey container rounded-4  ">
+              <Row className="d-flex flex-column ms-md-5 ps-md-5  pt-md-5">
+                <Col>
+                  <h1 className="text-start fonttt text-secondary col-md-6 col-12 ">
+                    iOS 17.
+                  </h1>
+                </Col>
+                <Col>
+                  <h1 className="text-start fonttt col-md-11 col-12 ">
+                    Style it out. Swap it over. Sticker it up.
+                  </h1>
+                </Col>
+              </Row>
+              <br />
+              <Row className="mt-md-5 mb-md-5 mb-2">
+                <Col></Col>
+                <Col className="col-md-10 col-12  ">
+                  <img className="d-block w-100 " src={ios17} />
+                </Col>
+                <Col></Col>
+              </Row>
+              <Row className="d-flex flex-row mx-md-5 mt-5 px-md-5 pb-md-5 pb-3 mb-md-4">
+                <Col className="col-12 col-md-4">
+                  <h5 className="text-start text-secondary fontttt">
+                    <span className="black">Contact Poster.</span> Create your
+                    own poster that contacts will see when you call. Pick a
+                    favorite pic or Memoji, pair it with a favorite font, and
+                    there you have it — your very own calling card.
+                  </h5>
+                </Col>
+                <Col className="col-12 col-md-4">
+                  <h5 className="text-start text-secondary fontttt">
+                    <span className="black">NameDrop.</span> Want to swap
+                    contact info with someone? Just bring your iPhone close to
+                    theirs. You can both choose what you want to share, and the
+                    information transfers instantly.
+                  </h5>
+                </Col>
+                <Col className="col-12 col-md-4 ">
+                  <h5 className="text-start text-secondary fontttt">
+                    <span className="black">Live Stickers.</span> Touch and hold
+                    an object in a photo to lift it from the background and
+                    create a sticker. Add effects like Puffy and Shiny. Or
+                    create animated stickers from Live Photos.
+                  </h5>
+                </Col>
+              </Row>
+            </div>
           </motion.div>
+          <br />
+        </div>
+      </div>
+      <div className=" boxApple13">
+        <div className="container ">
+          <Apple13 />
         </div>
       </div>
     </>
