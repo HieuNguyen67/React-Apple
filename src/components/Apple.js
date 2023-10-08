@@ -10,18 +10,20 @@ import Apple9 from "./Apple9";
 import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
 import Apple11 from './Apple11';
+import ColorInversionFooter from './footer';
 const HomeApple = () => {
 
 
 
   return (
     <>
-      <div className=" ">
-        <video className="col-12" autoplay="autoplay" muted="muted">
+      
+      <div className="">
+        <video className="col-12 " autoplay="autoplay" muted="muted">
           <source src={video} type="video/mp4" />
         </video>
 
-        <Container>
+        <Container className="">
           <Apple1 />
 
           <Apple2 />
@@ -35,9 +37,11 @@ const HomeApple = () => {
 
       <Apple9 />
 
-      <Apple11/>
+      <Apple11 />
 
-    
+      <ColorInversionFooter/>
+
+
     </>
   );
 };

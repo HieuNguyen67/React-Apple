@@ -16,20 +16,22 @@ import SignUpWithSDT from './components/SignUpWithSDT';
 import SignUpWithEmail from './components/SignUpWithEmail';
 import BackToTop from './components/backtotop';
 import Xiaomi from './components/Xiaomi';
-
+import ScrollIndicator from './components/ScrollIndicator';
 function App() {
 
 
   return (
     <>
-      <div className="app-container">
+      <div className="app-container ">
         <Header />
-        <br />
-        <br />
-        <br />
-        <br />
-        <BackToTop />
 
+        <br />
+        <br />
+        <br />
+        <br />
+        
+
+        <BackToTop />
         <Routes>
           <Route path="/React-Apple" element={<HomeApple />} />
           <Route path="/user" element={<Login />} />
@@ -41,9 +43,8 @@ function App() {
           <Route path="/SignUpWithEmail" element={<SignUpWithEmail />} />
           <Route path="/Xiaomi" element={<Xiaomi />} />
         </Routes>
-
-        {/* <HomeApple/> */}
       </div>
+      {/* <HomeApple/> */}
     </>
   );
 }

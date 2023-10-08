@@ -297,6 +297,9 @@ const Apple11 = () => {
       <div className=" boxApple13">
         <div className="container ">
           <Apple13 />
+          <br />
+          <br />
+          <br />
         </div>
       </div>
     </>
