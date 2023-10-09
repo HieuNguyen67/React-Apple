@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Apple/static/css/main.78a4a296.css",
-    "main.js": "/React-Apple/static/js/main.dbb7fdbf.js",
+    "main.css": "/React-Apple/static/css/main.bdacf31a.css",
+    "main.js": "/React-Apple/static/js/main.eb79026a.js",
     "static/js/787.28cb0dcd.chunk.js": "/React-Apple/static/js/787.28cb0dcd.chunk.js",
     "static/media/Introducing iPhone 15 - WOW - Apple.mp4": "/React-Apple/static/media/Introducing iPhone 15 - WOW - Apple.c276dfaa96026b052913.mp4",
     "static/media/chip.mp4": "/React-Apple/static/media/chip.34852ce77599c6a9d67d.mp4",
@@ -13,11 +13,9 @@
     "static/media/2023-10-06_003512.png": "/React-Apple/static/media/2023-10-06_003512.ea711346e5ee9d5689c0.png",
     "static/media/usbc__bvuxditgibci_large.png": "/React-Apple/static/media/usbc__bvuxditgibci_large.0677be85517421b84970.png",
     "static/media/dynamic_island_hw__bq0da9ahwxpy_large.png": "/React-Apple/static/media/dynamic_island_hw__bq0da9ahwxpy_large.a8c841514aec58350e20.png",
-    "static/media/creatingcolor.png": "/React-Apple/static/media/creatingcolor.87eed8f6c1034383640c.png",
     "static/media/dd_photonic__enur2ohg6emq_large.jpg": "/React-Apple/static/media/dd_photonic__enur2ohg6emq_large.6cfc44ffeea28ce8ad09.jpg",
     "static/media/iphone3.png": "/React-Apple/static/media/iphone3.1c6b8f1d6649d1ca663d.png",
     "static/media/iphone1.png": "/React-Apple/static/media/iphone1.d7a0ffe69c5170a447d2.png",
-    "static/media/Adesign.png": "/React-Apple/static/media/Adesign.1f7957160c7e378a85b3.png",
     "static/media/dd_focus__ckerb2vuk8r6_large.jpg": "/React-Apple/static/media/dd_focus__ckerb2vuk8r6_large.038efce93866c078b05b.jpg",
     "static/media/dd_telephoto__ezpmid85m9g2_large.jpg": "/React-Apple/static/media/dd_telephoto__ezpmid85m9g2_large.b93f21f35543dfe36af8.jpg",
     "static/media/womanred.jpg": "/React-Apple/static/media/womanred.309084daa5e9079235c6.jpg",
@@ -52,12 +50,12 @@
     "static/media/revicons.woff": "/React-Apple/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/logo.svg": "/React-Apple/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/React-Apple/index.html",
-    "main.78a4a296.css.map": "/React-Apple/static/css/main.78a4a296.css.map",
-    "main.dbb7fdbf.js.map": "/React-Apple/static/js/main.dbb7fdbf.js.map",
+    "main.bdacf31a.css.map": "/React-Apple/static/css/main.bdacf31a.css.map",
+    "main.eb79026a.js.map": "/React-Apple/static/js/main.eb79026a.js.map",
     "787.28cb0dcd.chunk.js.map": "/React-Apple/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78a4a296.css",
-    "static/js/main.dbb7fdbf.js"
+    "static/css/main.bdacf31a.css",
+    "static/js/main.eb79026a.js"
   ]
 }
