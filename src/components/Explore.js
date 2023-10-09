@@ -31,6 +31,7 @@ const Explore = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
+        transition={{ duration: 4, type: "tween" }}
       >
         <div className="mb-md-5 pb-md-5">
           <Row>

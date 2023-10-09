@@ -200,6 +200,7 @@ const Apple11 = () => {
             variants={boxVariant}
             initial="hidden"
             animate={control}
+            transition={{ duration: 4, type: "tween" }}
           >
             <div className="pt-5 mt-5 inboxgrey container rounded-4 pb-5 ">
               <Row className="d-flex flex-column ms-md-5 ps-md-5 mt-md-5 mt-2 pt-md-5">
@@ -300,9 +301,9 @@ const Apple11 = () => {
           <Apple13 />
           <br />
           <br />
-          <br /> 
+          <br />
           <Apple14 />
-          
+
           <Apple15 />
         </div>
       </div>

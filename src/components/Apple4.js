@@ -46,6 +46,7 @@ const Apple4 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
+        transition={{ duration: 4, type: "tween" }}
       >
         <div className="pt-md-5 pt-4 ">
           <Col className="col-8 pt-md-5">
@@ -199,7 +200,10 @@ const Apple4 = () => {
                         </h5>
                       </div>
                     </Col>
-                    <Col className="col-12 col-md-6 mt-3" md={{ order: "first" }}>
+                    <Col
+                      className="col-12 col-md-6 mt-3"
+                      md={{ order: "first" }}
+                    >
                       <img
                         className="d-block w-100  mt-md-5  mt-4"
                         src={dance}

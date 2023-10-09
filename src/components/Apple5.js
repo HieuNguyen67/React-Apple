@@ -45,6 +45,7 @@ const Apple5 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
+        transition={{ duration: 4, type: "tween" }}
       >
         <div className="mt-md-5 pt-md-5">
           <Col>

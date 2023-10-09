@@ -115,6 +115,7 @@ const Slider = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
+      transition={{ duration: 4, type: "tween" }}
     >
       <div className="parent">
         <div>

@@ -37,6 +37,7 @@ useEffect(() => {
           variants={boxVariant}
           initial="hidden"
           animate={control}
+          transition={{ duration: 4, type: "tween" }}
         >
           <div className="pt-md-5  ">
             <Col className="col-8 pt-md-5">
@@ -92,8 +93,6 @@ useEffect(() => {
               </Col>
             </Row>
           </div>
-         
-          
         </motion.div>
       </>
     );

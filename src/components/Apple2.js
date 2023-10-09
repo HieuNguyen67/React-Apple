@@ -40,6 +40,7 @@ const Apple1 = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
+      transition={{ duration: 4, type: "tween" }}
     >
       <Container>
         <div className="mb-md-5 pb-md-5">
@@ -93,19 +94,16 @@ const Apple1 = () => {
         <Modal show={show} onHide={handleClose} fullscreen={true}>
           <Modal.Header closeButton className="watch"></Modal.Header>
           <Modal.Body>
-           
-              <div className="container position-absolute top-50 start-50 translate-middle">
-                <video
-                  className="col-12  shadow"
-                  autoplay="autoplay"
-                  loop="loop"
-                  controls
-                  
-                >
-                  <source src={introduce} type="video/mp4" />
-                </video>
-              </div>
-            
+            <div className="container position-absolute top-50 start-50 translate-middle">
+              <video
+                className="col-12  shadow"
+                autoplay="autoplay"
+                loop="loop"
+                controls
+              >
+                <source src={introduce} type="video/mp4" />
+              </video>
+            </div>
           </Modal.Body>
         </Modal>
       </div>

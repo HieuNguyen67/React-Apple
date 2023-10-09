@@ -29,6 +29,7 @@ const Apple10 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
+        transition={{ duration: 4, type: "tween" }}
       >
         <div className="mt-md-5 pt-md-5 pt-5">
           <Row className="d-flex">
@@ -64,12 +65,16 @@ const Apple10 = () => {
                 portraits. Voice Isolation for phone calls. And smooth
                 performance for graphics-intensive games. All with incredible
                 efficiency for great battery life. No wonder it started as a Pro
-                chip.<hr/>The A16 Bionic GPU is up to 40% faster than the GPU in iPhone 12
+                chip.
+                <hr />
+                The A16 Bionic GPU is up to 40% faster than the GPU in iPhone 12
               </h4>
-             </Col>
+            </Col>
             <Col />
           </Row>
-        </div><br/><br/>
+        </div>
+        <br />
+        <br />
       </motion.div>
     </>
   );

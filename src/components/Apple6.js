@@ -27,6 +27,7 @@ const Apple6 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
+        transition={{ duration: 4, type: "tween" }}
       >
         <div>
           <div className="pt-md-5  ">
@@ -81,11 +82,7 @@ const Apple6 = () => {
               </Col>
             </Row>
           </div>
-          
         </div>
-        
-
-
       </motion.div>
     </>
   );

@@ -80,18 +80,18 @@ const SlideCroll = () => {
   }, [control, inView]);
   return (
     <motion.div
-    className=" col-12 mt-3 mt-md-5 pt-md-5"
-    ref={ref}
-    variants={boxVariant}
-    initial="hidden"
-    animate={control}
-  >
-    <Col>
-      <h1 className='fontt'>Take a closer look.</h1>
-      
-      <Slideshow slides={slides} />
-     
-    </Col>
+      className=" col-12 mt-3 mt-md-5 pt-md-5"
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      transition={{ duration: 4, type: "tween" }}
+    >
+      <Col>
+        <h1 className="fontt">Take a closer look.</h1>
+
+        <Slideshow slides={slides} />
+      </Col>
     </motion.div>
   );
 };
