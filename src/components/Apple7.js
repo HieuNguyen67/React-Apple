@@ -24,7 +24,6 @@ import dance from "../assets/image/dd_pinch__fft66fhthgi2_large.jpg";
 
 import { Container } from "@mui/system";
 import CancelIcon from "@mui/icons-material/Cancel";
-import video from "../assets/video/large.mp4";
 
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";

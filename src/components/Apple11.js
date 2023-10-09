@@ -19,13 +19,14 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import dance from "../assets/image/dd_charger__cp1yvs3potea_large-removebg-preview.png";
 import apple from "../assets/image/2023-10-06_003512.png";
 import values from "../assets/image/values__bhdzybdgpkxe_large.jpg";
-import ios17 from "../assets/image/ios17__e2zdgdkbpjue_large.jpg"
+import ios17 from "../assets/image/ios17__e2zdgdkbpjue_large.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import "./body.scss";
 import Apple13 from "./Apple13";
-
+import Apple14 from "./Apple14";
+import Apple15 from "./Apple15";
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },
@@ -299,7 +300,10 @@ const Apple11 = () => {
           <Apple13 />
           <br />
           <br />
-          <br />
+          <br /> 
+          <Apple14 />
+          
+          <Apple15 />
         </div>
       </div>
     </>

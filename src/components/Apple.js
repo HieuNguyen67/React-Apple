@@ -10,7 +10,7 @@ import Apple9 from "./Apple9";
 import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
 import Apple11 from './Apple11';
-import ColorInversionFooter from './footer';
+import Footer from './Footer';
 const HomeApple = () => {
 
 
@@ -39,7 +39,9 @@ const HomeApple = () => {
 
       <Apple11 />
 
-      <ColorInversionFooter/>
+      <Footer/>
+
+
 
 
     </>

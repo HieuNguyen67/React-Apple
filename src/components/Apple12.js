@@ -2,11 +2,8 @@ import Col from "react-bootstrap/Col";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import Row from "react-bootstrap/Row";
 import "./body.scss";
-import usb from "../assets/image/usbc__bvuxditgibci_large.png";
-import CountUp from "react-countup";
-import Image from "react-bootstrap/Image";
+
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },

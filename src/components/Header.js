@@ -1,9 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import "./body.scss";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
 import React, { useEffect, useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Button from "react-bootstrap/Button";
@@ -21,8 +19,8 @@ const Header = (props) => {
       {" "}
       <div>
         {" "}
-        <ScrollIndicator color="orange" />
-        <Navbar expand="lg" className="bg-body-tertiary " fixed="top">
+        <ScrollIndicator  />
+        <Navbar expand="lg" className="bg-body-tertiary shadow-sm" fixed="top" >
           <Container className="my-2">
             <NavLink to="/React-Apple" className=" decorate ">
               <Navbar.Brand to="/">
@@ -47,15 +45,11 @@ const Header = (props) => {
                     <NavLink className="nav-link" to="/React-Apple" href="#">
                       Apple
                     </NavLink>
-                    <NavLink className="nav-link" to="1" href="#">
-                      SamSung
-                    </NavLink>
+                    
                     <NavLink className="nav-link" to="/Xiaomi" href="#">
                       Xiaomi
                     </NavLink>
-                    <NavLink className="nav-link" to="3" href="#">
-                      Oppo
-                    </NavLink>
+                    
                   </Nav>
                   <div className=" mt-5 mt-md-0 pt-5 pt-md-0">
                     <div className="d-flex flex-grow mx-1 mt-5 mt-md-0 pt-5 pt-md-0">

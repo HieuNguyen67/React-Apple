@@ -23,13 +23,13 @@ function App() {
   return (
     <>
       <div className="app-container ">
+        <ScrollIndicator />
         <Header />
 
         <br />
         <br />
         <br />
         <br />
-        
 
         <BackToTop />
         <Routes>

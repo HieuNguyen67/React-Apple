@@ -1,9 +1,5 @@
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+
 import { Container } from "@mui/system";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import "./body.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

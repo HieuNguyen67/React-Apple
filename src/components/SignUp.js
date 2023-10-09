@@ -1,13 +1,8 @@
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+
 import { Container } from '@mui/system';
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import './body.scss';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import QrCode2Icon from '@mui/icons-material/QrCode2';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GoogleIcon from '@mui/icons-material/Google';

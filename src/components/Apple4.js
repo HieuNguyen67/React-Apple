@@ -13,19 +13,11 @@ import InvertColorsIcon from "@mui/icons-material/InvertColors";
 import Modal from "react-bootstrap/Modal";
 import "./body.scss";
 import color from "../assets/image/dd_colors__ee640q5kx2uu_large.jpg";
-import creatingcolor from "../assets/image/creatingcolor.png";
-import adesign from "../assets/image/Adesign.png";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import woman from "../assets/image/dd_chemistry__bjfbpo191wpe_large.jpg";
-import icon from "../assets/image/dd_icon_telephoto__bklfurjy2w2q_large.png";
-import man from "../assets/image/dd_main__e3h2l832qdg2_large.jpg";
-import onex from "../assets/image/1x.png";
 import dance from "../assets/image/dd_beautiful__dyi0uwc0bsq6_large.jpg";
-import halfx from "../assets/image/0.5x.png";
-import manpink from "../assets/image/manpink.jpg";
-import womanred from "../assets/image/womanred.jpg";
-import womancamera from "../assets/image/womancamera.jpg";
+
 const boxVariant = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   hidden: { opacity: 0, scale: 0 },

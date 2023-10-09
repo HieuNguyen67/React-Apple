@@ -3,7 +3,6 @@ import pink from '../assets/image/pink.png'
 import yellow from '../assets/image/yellow.png'
 import green from '../assets/image/green.png'
 import titan from '../assets/image/titan.png'
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
