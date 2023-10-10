@@ -19,7 +19,7 @@ import woman from "../assets/image/dd_chemistry__bjfbpo191wpe_large.jpg";
 import dance from "../assets/image/dd_beautiful__dyi0uwc0bsq6_large.jpg";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 },
 };
 

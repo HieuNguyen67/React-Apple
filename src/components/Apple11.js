@@ -28,7 +28,7 @@ import Apple13 from "./Apple13";
 import Apple14 from "./Apple14";
 import Apple15 from "./Apple15";
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple11 = () => {

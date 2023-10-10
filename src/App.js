@@ -41,7 +41,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/SignUpWithSDT" element={<SignUpWithSDT />} />
           <Route path="/SignUpWithEmail" element={<SignUpWithEmail />} />
-          <Route path="/Xiaomi" element={<Xiaomi />} />
+          <Route path="/About" element={<Xiaomi />} />
         </Routes>
       </div>
       {/* <HomeApple/> */}

@@ -30,7 +30,9 @@ const Footer = () => {
                   <h5 className="text-secondary">Apple</h5>
                 </NavLink>
                 <br />
-                <h5 className="text-secondary">Xiaomi</h5>
+                <NavLink to="/About" className="text-decoration-none">
+                  <h5 className="text-secondary">About</h5>
+                </NavLink>
               </p>
             </Col>
             <Col />

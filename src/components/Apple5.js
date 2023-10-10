@@ -20,7 +20,7 @@ import womancamera from "../assets/image/womancamera.jpg";
 import { Container } from "@mui/system";
 import CancelIcon from "@mui/icons-material/Cancel";
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple5 = () => {

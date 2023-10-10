@@ -8,7 +8,7 @@ import "./body.scss";
 import iphone1 from "../assets/image/dynamic_island_hw__bq0da9ahwxpy_large.png";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -69,6 +69,7 @@ const Explore = () => {
           <Row>
             <Col></Col>
             <Col className="col-md-6 col-6">
+              
               <img className="d-block w-100 " src={iphone1} alt="First slide" />
             </Col>
             <Col></Col>

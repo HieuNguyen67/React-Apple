@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
   hidden: { opacity: 0, scale: 0 }
 };
 
