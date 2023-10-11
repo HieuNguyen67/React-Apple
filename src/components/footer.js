@@ -2,6 +2,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Logo from "../assets/image/Logo1.png";
 import { NavLink } from "react-router-dom";
+import { motion, useAnimation } from "framer-motion";
+
+
 const Footer = () => {
   return (
     <>
@@ -27,11 +30,21 @@ const Footer = () => {
                 <h1>Menu</h1>
                 <br />
                 <NavLink to="/React-Apple" className="text-decoration-none">
-                  <h5 className="text-secondary">Apple</h5>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <h5 className="text-secondary">Apple</h5>
+                  </motion.div>
                 </NavLink>
                 <br />
                 <NavLink to="/About" className="text-decoration-none">
-                  <h5 className="text-secondary">About</h5>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <h5 className="text-secondary">About</h5>
+                  </motion.div>
                 </NavLink>
               </p>
             </Col>

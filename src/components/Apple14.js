@@ -31,7 +31,7 @@ const responsive = {
   },
 };
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple14 = () => {
@@ -53,7 +53,6 @@ const Apple14 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
       >
         <div className="pt-md-5  mt-5">
           <Col className="col-12 pt-md-5">
@@ -72,154 +71,164 @@ const Apple14 = () => {
             dotListClass="custom-dot-list-style"
           >
             <div>
-              <Card
-                style={{
-                  width: "24rem",
-                  height: "20rem",
-                  border: "0px solid white",
-                }}
-                className="rounded-5 mx-auto p-3"
-              >
-                <Card.Body>
-                  <Row className="d-flex flex-column">
-                    <Col>
-                      <img src={icontrade} />
-                    </Col>
-                    <br />
-                    <Col>
-                      <h3 className="col-8">Save with Apple Trade In.</h3>
-                    </Col>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Card
+                  style={{
+                    width: "24rem",
+                    height: "20rem",
+                    border: "0px solid white",
+                  }}
+                  className="rounded-5 mx-auto p-3 shadow-sm"
+                >
+                  <Card.Body>
+                    <Row className="d-flex flex-column">
+                      <Col>
+                        <img src={icontrade} />
+                      </Col>
+                      <br />
+                      <Col>
+                        <h3 className="col-8">Save with Apple Trade In.</h3>
+                      </Col>
 
-                    <Col>
-                      <p style={{ fontSize: "18px" }}>
-                        Get $200–$650 in credit toward iPhone 15 or iPhone 15
-                        Pro when you trade in iPhone 11 or higher.*
-                      </p>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+                      <Col>
+                        <p style={{ fontSize: "18px" }}>
+                          Get $200–$650 in credit toward iPhone 15 or iPhone 15
+                          Pro when you trade in iPhone 11 or higher.*
+                        </p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </motion.div>{" "}
             </div>
             <div>
-              <Card
-                style={{
-                  width: "24rem",
-                  height: "20rem",
-                  border: "0px solid white",
-                }}
-                className="rounded-5 mx-auto p-3"
-              >
-                <Card.Body>
-                  <Row className="d-flex flex-column">
-                    <Col>
-                      <img src={icon1} />
-                    </Col>
-                    <br />
-                    <Col>
-                      <h3 className="col-8">Pay over time, interest‑free.</h3>
-                    </Col>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Card
+                  style={{
+                    width: "24rem",
+                    height: "20rem",
+                    border: "0px solid white",
+                  }}
+                  className="rounded-5 mx-auto p-3 shadow-sm"
+                >
+                  <Card.Body>
+                    <Row className="d-flex flex-column">
+                      <Col>
+                        <img src={icon1} />
+                      </Col>
+                      <br />
+                      <Col>
+                        <h3 className="col-8">Pay over time, interest‑free.</h3>
+                      </Col>
 
-                    <Col>
-                      <p style={{ fontSize: "18px" }}>
-                        When you choose to check out with Apple Card Monthly
-                        Installments.
-                      </p>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+                      <Col>
+                        <p style={{ fontSize: "18px" }}>
+                          When you choose to check out with Apple Card Monthly
+                          Installments.
+                        </p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </div>
             <div>
-              <Card
-                style={{
-                  width: "24rem",
-                  height: "20rem",
-                  border: "0px solid white",
-                }}
-                className="rounded-5 mx-auto p-3"
-              >
-                <Card.Body>
-                  <Row className="d-flex flex-column">
-                    <Col>
-                      <img src={icon2} />
-                    </Col>
-                    <br />
-                    <Col>
-                      <h3 className="col-12">
-                        iPhone carrier deals. Right here at Apple. For as low as
-                        $0.
-                      </h3>
-                    </Col>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Card
+                  style={{
+                    width: "24rem",
+                    height: "20rem",
+                    border: "0px solid white",
+                  }}
+                  className="rounded-5 mx-auto p-3 shadow-sm"
+                >
+                  <Card.Body>
+                    <Row className="d-flex flex-column">
+                      <Col>
+                        <img src={icon2} />
+                      </Col>
+                      <br />
+                      <Col>
+                        <h3 className="col-12">
+                          iPhone carrier deals. Right here at Apple. For as low
+                          as $0.
+                        </h3>
+                      </Col>
 
-                    <Col>
-                      <p style={{ fontSize: "18px" }}>
-                        Includes trade‑in and carrier credits. AT&T: up to
-                        $1000. T‑Mobile: up to $800. Verizon: up to $830.
-                      </p>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+                      <Col>
+                        <p style={{ fontSize: "18px" }}>
+                          Includes trade‑in and carrier credits. AT&T: up to
+                          $1000. T‑Mobile: up to $800. Verizon: up to $830.
+                        </p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </div>
             <div>
-              <Card
-                style={{
-                  width: "24rem",
-                  height: "20rem",
-                  border: "0px solid white",
-                }}
-                className="rounded-5 mx-auto p-3"
-              >
-                <Card.Body>
-                  <Row className="d-flex flex-column">
-                    <Col>
-                      <img src={icon3} />
-                    </Col>
-                    <br />
-                    <Col>
-                      <h3 className="col-10">
-                        Get flexible delivery and easy pickup.
-                      </h3>
-                    </Col>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Card
+                  style={{
+                    width: "24rem",
+                    height: "20rem",
+                    border: "0px solid white",
+                  }}
+                  className="rounded-5 mx-auto p-3 shadow-sm"
+                >
+                  <Card.Body>
+                    <Row className="d-flex flex-column">
+                      <Col>
+                        <img src={icon3} />
+                      </Col>
+                      <br />
+                      <Col>
+                        <h3 className="col-10">
+                          Get flexible delivery and easy pickup.
+                        </h3>
+                      </Col>
 
-                    <Col>
-                      <p style={{ fontSize: "18px" }}>
-                        Choose two‑hour delivery from an Apple Store, free
-                        delivery, or easy pickup options.
-                      </p>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+                      <Col>
+                        <p style={{ fontSize: "18px" }}>
+                          Choose two‑hour delivery from an Apple Store, free
+                          delivery, or easy pickup options.
+                        </p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </div>
             <div>
-              <Card
-                style={{
-                  width: "24rem",
-                  height: "20rem",
-                  border: "0px solid white",
-                }}
-                className="rounded-5 mx-auto p-3"
-              >
-                <Card.Body>
-                  <Row className="d-flex flex-column">
-                    <Col>
-                      <img src={icon4} />
-                    </Col>
-                    <br />
-                    <Col>
-                      <h3 className="col-10">Get to know your new iPhone.</h3>
-                    </Col>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Card
+                  style={{
+                    width: "24rem",
+                    height: "20rem",
+                    border: "0px solid white",
+                  }}
+                  className="rounded-5 mx-auto p-3 shadow-sm"
+                >
+                  <Card.Body>
+                    <Row className="d-flex flex-column">
+                      <Col>
+                        <img src={icon4} />
+                      </Col>
+                      <br />
+                      <Col>
+                        <h3 className="col-10">Get to know your new iPhone.</h3>
+                      </Col>
 
-                    <Col>
-                      <p style={{ fontSize: "18px" }}>
-                        Learn how to get the most out of your new iPhone with a
-                        free one‑on‑one Personal Session.
-                      </p>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
+                      <Col>
+                        <p style={{ fontSize: "18px" }}>
+                          Learn how to get the most out of your new iPhone with
+                          a free one‑on‑one Personal Session.
+                        </p>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              </motion.div>
             </div>
           </Carousel>
         </div>

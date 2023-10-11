@@ -28,7 +28,7 @@ import Apple13 from "./Apple13";
 import Apple14 from "./Apple14";
 import Apple15 from "./Apple15";
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple11 = () => {
@@ -60,15 +60,20 @@ const Apple11 = () => {
             <Row>
               <Col></Col>
               <Col className=" col-md-4 col-7">
-                <Button
-                  onClick={handleShow}
-                  variant="outline-dark"
-                  className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5 "
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
-                  <h3 className="fontttt ">
-                    Explore connectivity <AddCircleIcon color="primary" />
-                  </h3>
-                </Button>
+                  <Button
+                    onClick={handleShow}
+                    variant="outline-dark"
+                    className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5 "
+                  >
+                    <h3 className="fontttt ">
+                      Explore connectivity <AddCircleIcon color="primary" />
+                    </h3>
+                  </Button>
+                </motion.div>
               </Col>
               <Col></Col>
             </Row>
@@ -200,7 +205,6 @@ const Apple11 = () => {
             variants={boxVariant}
             initial="hidden"
             animate={control}
-            transition={{ duration: 4, type: "tween" }}
           >
             <div className="pt-5 mt-5 inboxgrey container rounded-4 pb-5 ">
               <Row className="d-flex flex-column ms-md-5 ps-md-5 mt-md-5 mt-2 pt-md-5">
@@ -261,7 +265,12 @@ const Apple11 = () => {
               <Row className="mt-md-5 mb-md-5 mb-2">
                 <Col></Col>
                 <Col className="col-md-10 col-12  ">
-                  <img className="d-block w-100 " src={ios17} />
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <img className="d-block w-100 " src={ios17} />
+                  </motion.div>
                 </Col>
                 <Col></Col>
               </Row>

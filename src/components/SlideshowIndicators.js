@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2} },
   hidden: { opacity: 0, scale: 0 }
 };
 
@@ -24,39 +24,37 @@ const Slideshow = ({ slides }) => {
   };
 
   return (
-   
-    <Container  className='d-flex flex-row my-md-5 py-md-5 my-4'>
-    
-    <Row  className='d-flex flex-row  col-12 '>
-    <Col></Col>
-    <Col className=" col-md-2 col-12">
-    
-      <div className=" ">
-        <img src={slides[currentSlide]} alt={`Slide ${currentSlide + 1}`} className="anh " />
-      </div>
-      
-   
-    </Col>
-    <Col></Col>
-    </Row>
-    <Row className='me-5'>
-    <Col></Col>
-      <Col className="indicators "> <br></br>
-        {slides.map((slide, index) => (
-          <button 
-            key={index} 
-            className={index === currentSlide ? 'active' : ''}
-            onClick={() => goToSlide(index)}
-          >
-           
-          </button>
-        ))}
-      </Col>
-      <Col></Col>
+    <Container className="d-flex flex-row my-md-5 py-md-5 my-4">
+      <Row className="d-flex flex-row  col-12 ">
+        <Col></Col>
+        <Col className=" col-md-2 col-12">
+          
+          <div className=" ">
+            <img
+              src={slides[currentSlide]}
+              alt={`Slide ${currentSlide + 1}`}
+              className="anh "
+            />
+          </div>
+        </Col>
+        <Col></Col>
       </Row>
-      
+      <Row className="me-5">
+        <Col></Col>
+        <Col className="indicators ">
+          {" "}
+          <br></br>
+          {slides.map((slide, index) => (
+            <button
+              key={index}
+              className={index === currentSlide ? "active" : ""}
+              onClick={() => goToSlide(index)}
+            ></button>
+          ))}
+        </Col>
+        <Col></Col>
+      </Row>
     </Container>
-    
   );
 };
 
@@ -85,7 +83,7 @@ const SlideCroll = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      transition={{ duration: 4, type: "tween" }}
+      
     >
       <Col>
         <h1 className="fontt">Take a closer look.</h1>

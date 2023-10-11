@@ -11,7 +11,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -37,7 +37,6 @@ useEffect(() => {
           variants={boxVariant}
           initial="hidden"
           animate={control}
-          transition={{ duration: 4, type: "tween" }}
         >
           <div className="pt-md-5  ">
             <Col className="col-8 pt-md-5">
@@ -49,9 +48,14 @@ useEffect(() => {
               <Col className="col-12 col-md-5">
                 <Accordion defaultActiveKey="0" flush className="backss">
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="collapsed">
-                      <h3>iPhone and Mac</h3>
-                    </Accordion.Header>
+                    <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Accordion.Header className="collapsed">
+                        <h3>iPhone and Mac</h3>
+                      </Accordion.Header>
+                    </motion.div>
                     <Accordion.Body className="backs">
                       You can answer calls or messages from your iPhone directly
                       on your Mac. Copy images, video, or text from your iPhone,
@@ -61,9 +65,14 @@ useEffect(() => {
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
-                    <Accordion.Header>
-                      <h3>iPhone and Apple Watch</h3>
-                    </Accordion.Header>
+                    <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Accordion.Header>
+                        <h3>iPhone and Apple Watch</h3>
+                      </Accordion.Header>
+                    </motion.div>
                     <Accordion.Body className="backs">
                       Misplaced your iPhone? The latest Apple Watch models can
                       show you its approximate distance and direction.17 To set
@@ -74,9 +83,14 @@ useEffect(() => {
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                      <h3>iPhone and AirPods</h3>
-                    </Accordion.Header>
+                    <motion.div
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Accordion.Header>
+                        <h3>iPhone and AirPods</h3>
+                      </Accordion.Header>
+                    </motion.div>
                     <Accordion.Body className="backs">
                       Set up AirPods on iPhone with just a tap. You’ll love
                       Adaptive Audio, which automatically tailors the noise
@@ -89,7 +103,13 @@ useEffect(() => {
               </Col>
               <Col className="col-md-1" />
               <Col className="col-md-6 mt-md-0 mt-3">
-                <img className="d-block w-100 " src={mac} />
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  {" "}
+                  <img className="d-block w-100 " src={mac} />
+                </motion.div>
               </Col>
             </Row>
           </div>

@@ -19,7 +19,7 @@ import woman from "../assets/image/dd_chemistry__bjfbpo191wpe_large.jpg";
 import dance from "../assets/image/dd_beautiful__dyi0uwc0bsq6_large.jpg";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -46,7 +46,6 @@ const Apple4 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
       >
         <div className="pt-md-5 pt-4 ">
           <Col className="col-8 pt-md-5">
@@ -108,15 +107,17 @@ const Apple4 = () => {
           <Row>
             <Col></Col>
             <Col className="mt-md-5 col-md-4 col-6 mt-5">
-              <Button
-                onClick={handleShow}
-                variant="outline-dark"
-                className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5"
-              >
-                <h3 className="fontttt ">
-                  Go deeper on design <AddCircleIcon color="primary" />
-                </h3>
-              </Button>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Button
+                  onClick={handleShow}
+                  variant="outline-dark"
+                  className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5"
+                >
+                  <h3 className="fontttt ">
+                    Go deeper on design <AddCircleIcon color="primary" />
+                  </h3>
+                </Button>
+              </motion.div>
             </Col>
             <Col></Col>
           </Row>

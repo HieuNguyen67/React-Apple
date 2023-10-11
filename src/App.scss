@@ -43,12 +43,13 @@
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-color: #F5F5F5;
-    border-radius: 10px;
+    border-radius: 10px;overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
 width: 7px;
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -57,5 +58,5 @@ width: 7px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
     background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);overflow-x: hidden;
   }

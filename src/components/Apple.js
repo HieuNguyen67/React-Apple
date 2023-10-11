@@ -11,39 +11,41 @@ import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
 import Apple11 from './Apple11';
 import Footer from './Footer';
+import { motion } from "framer-motion";
 const HomeApple = () => {
 
 
 
   return (
     <>
-      
-      <div className="">
-        <video className="col-12 " autoplay="autoplay" muted="muted">
-          <source src={video} type="video/mp4" />
-        </video>
+      <motion.div
+        initial={{ opacity: 0, y: 98 }}
+        animate={{ opacity: 1, y: 1 }}
+        transition={{ type: "spring", duration: 0.6 }}
+      >
+        <div className="">
+          <video className="col-12 " autoplay="autoplay" muted="muted">
+            <source src={video} type="video/mp4" />
+          </video>
 
-        <Container className="">
-          <Apple1 />
+          <Container className="">
+            <Apple1 />
 
-          <Apple2 />
+            <Apple2 />
 
-          <SlideCroll />
+            <SlideCroll />
 
-          <Explore />
-        </Container>
-      </div>
-      <Apple3 />
+            <Explore />
+          </Container>
+        </div>
+        <Apple3 />
 
-      <Apple9 />
+        <Apple9 />
 
-      <Apple11 />
+        <Apple11 />
 
-      <Footer/>
-
-
-
-
+        <Footer />
+      </motion.div>
     </>
   );
 };

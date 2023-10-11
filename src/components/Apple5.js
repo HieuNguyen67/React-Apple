@@ -20,7 +20,7 @@ import womancamera from "../assets/image/womancamera.jpg";
 import { Container } from "@mui/system";
 import CancelIcon from "@mui/icons-material/Cancel";
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple5 = () => {
@@ -45,7 +45,6 @@ const Apple5 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
       >
         <div className="mt-md-5 pt-md-5">
           <Col>
@@ -93,15 +92,17 @@ const Apple5 = () => {
           <Row>
             <Col></Col>
             <Col className=" col-md-4 col-7">
-              <Button
-                onClick={handleShow}
-                variant="outline-dark"
-                className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5 "
-              >
-                <h3 className="fontttt ">
-                  Zoom in on the cameras <AddCircleIcon color="primary" />
-                </h3>
-              </Button>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <Button
+                  onClick={handleShow}
+                  variant="outline-dark"
+                  className="shadow col-md-12 col-12 mt-md-5 py-md-3   pt-3 rounded-5 "
+                >
+                  <h3 className="fontttt ">
+                    Zoom in on the cameras <AddCircleIcon color="primary" />
+                  </h3>
+                </Button>
+              </motion.div>
             </Col>
             <Col></Col>
           </Row>

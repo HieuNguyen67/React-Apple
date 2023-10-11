@@ -11,7 +11,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 }
 };
 
@@ -35,7 +35,7 @@ const Apple1 = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      transition={{ duration: 4, type: "tween" }}
+      
     >
       <Container>
         <div>

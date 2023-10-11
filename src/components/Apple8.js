@@ -7,7 +7,7 @@ import "./body.scss";
 import battery from "../assets/image/battery__cqocvkpqjn2a_large.jpg";
 import CountUp from "react-countup";
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple8 = () => {
@@ -29,7 +29,6 @@ const Apple8 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
       >
         <div className="mt-md-5 pt-md-5">
           <Row className="d-flex">
@@ -42,7 +41,9 @@ const Apple8 = () => {
             <Col />
           </Row>
         </div>
-        <img className="d-block w-100 mt-md-5 mt-3" src={battery} />
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <img className="d-block w-100 mt-md-5 mt-3" src={battery} />
+        </motion.div>
         <div className="hours ms-4">
           <Row className="d-flex flex-row">
             <Col />

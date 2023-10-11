@@ -6,7 +6,7 @@ import camera from "../assets/video/camera.mp4"
 import Row from "react-bootstrap/Row";
 import smile from "../assets/image/smile.jpg"
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple6 = () => {
@@ -27,7 +27,6 @@ const Apple6 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
       >
         <div>
           <div className="pt-md-5  ">
@@ -63,7 +62,12 @@ const Apple6 = () => {
           <div className="mt-5">
             <Row className="d-flex flex-row ms-md-5 ps-md-5">
               <Col className="col-8 col-md-6 ">
-                <img className="d-block w-100  mt-md-5  mt-4" src={smile} />
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <img className="d-block w-100  mt-md-5  mt-4" src={smile} />
+                </motion.div>
               </Col>
               <Col className="mt-md-5 pt-md-5 me-3 mt-4 rela">
                 <div className="ms-md-5">

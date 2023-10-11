@@ -78,7 +78,7 @@ const sliderImageUrl = [
   },
 ];
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Slider = () => {
@@ -115,7 +115,6 @@ const Slider = () => {
       variants={boxVariant}
       initial="hidden"
       animate={control}
-      transition={{ duration: 4, type: "tween" }}
     >
       <div className="parent">
         <div>
@@ -142,12 +141,17 @@ const Slider = () => {
           {sliderImageUrl.map((imageUrl, index) => {
             return (
               <div className="slider" key={index}>
-                <img
-                  src={imageUrl.url}
-                  alt="movie"
-                  className="d-block w-100 "
-                  onClick={handleOpen}
-                />
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <img
+                    src={imageUrl.url}
+                    alt="movie"
+                    className="d-block w-100 "
+                    onClick={handleOpen}
+                  />
+                </motion.div>
               </div>
             );
           })}
@@ -164,15 +168,18 @@ const Slider = () => {
         <Row>
           <Col></Col>
           <Col className=" col-md-4 col-7">
-            <Button
-              onClick={handleShow}
-              variant="outline-dark"
-              className="shadow col-md-12 col-12 mt-md-5 py-md-3    rounded-5 "
-            >
-              <h3 className="fontttt mt-2">
-                More on potraits <AddCircleIcon color="primary" />
-              </h3>
-            </Button>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              {" "}
+              <Button
+                onClick={handleShow}
+                variant="outline-dark"
+                className="shadow col-md-12 col-12 mt-md-5 py-md-3    rounded-5 "
+              >
+                <h3 className="fontttt mt-2">
+                  More on potraits <AddCircleIcon color="primary" />
+                </h3>
+              </Button>
+            </motion.div>
           </Col>
           <Col></Col>
         </Row>

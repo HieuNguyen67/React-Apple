@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import "./body.scss";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 const Apple12 = () => {
@@ -27,7 +27,7 @@ const Apple12 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
+        
       >
         <div className="pt-md-5  ">
           <Col className="col-8 pt-md-5">

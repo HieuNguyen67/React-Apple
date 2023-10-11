@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import "./body.scss";
 import video from "../assets/video/chip.mp4"
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -29,7 +29,7 @@ const Apple10 = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
+  
       >
         <div className="mt-md-5 pt-md-5 pt-5">
           <Row className="d-flex">

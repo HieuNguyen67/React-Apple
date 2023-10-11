@@ -8,7 +8,7 @@ import "./body.scss";
 import iphone1 from "../assets/image/dynamic_island_hw__bq0da9ahwxpy_large.png";
 
 const boxVariant = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.2 } },
   hidden: { opacity: 0, scale: 0 },
 };
 
@@ -31,7 +31,7 @@ const Explore = () => {
         variants={boxVariant}
         initial="hidden"
         animate={control}
-        transition={{ duration: 4, type: "tween" }}
+       
       >
         <div className="mb-md-5 pb-md-5">
           <Row>
