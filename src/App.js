@@ -31,15 +31,15 @@ function App() {
         <br />
         <BackToTop />{" "}
         <Routes>
-          <Route path="/React-Apple" element={<HomeApple />} exact />
-          <Route path="/user" element={<Login />} exact />
-          <Route path="/4" element={<LoginQR />} exact />
-          <Route path="/5" element={<LoginwithEmail exact />} />
-          <Route path="/10" element={<LoginwithEmail1 exact />} />
-          <Route path="/SignUp" element={<SignUp />} exact />
-          <Route path="/SignUpWithSDT" element={<SignUpWithSDT />} exact />
-          <Route path="/SignUpWithEmail" element={<SignUpWithEmail exact />} />
-          <Route path="/About" element={<Xiaomi />} exact />
+          <Route path="/React-Apple" element={<HomeApple />}  />
+          <Route path="/user" element={<Login />}  />
+          <Route path="/4" element={<LoginQR />}  />
+          <Route path="/5" element={<LoginwithEmail  />} />
+          <Route path="/10" element={<LoginwithEmail1  />} />
+          <Route path="/SignUp" element={<SignUp />}  />
+          <Route path="/SignUpWithSDT" element={<SignUpWithSDT />}  />
+          <Route path="/SignUpWithEmail" element={<SignUpWithEmail  />} />
+          <Route path="/About" element={<Xiaomi />}  />
         </Routes>
       </div>
     </>

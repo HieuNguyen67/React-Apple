@@ -60,7 +60,7 @@ const Header = (props) => {
                       whileHover={{ scale: 1.2 }}
                       whileTap={{ scale: 0.8 }}
                     >
-                      <NavLink className="nav-link" to="/About" href="#" onClick={() => (this.expand = '')}>
+                      <NavLink className="nav-link" to="/About" onClick={() => (this.expand = '')}>
                         About
                       </NavLink>
                     </motion.div>
