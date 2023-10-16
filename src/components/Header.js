@@ -10,6 +10,8 @@ import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import ScrollIndicator from "./ScrollIndicator";
 import { motion, useAnimation } from "framer-motion";
+import "./custom.scss"
+
 const Header = (props) => {
   const location = useLocation();
 
@@ -35,11 +37,11 @@ const Header = (props) => {
             </NavLink>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Navbar.Offcanvas placement="end">
+              <Navbar.Offcanvas placement="end" className="offcanvas-size-sm">
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title>Store</Offcanvas.Title>
                 </Offcanvas.Header>
-                <Offcanvas.Body className="d-flex justify-content-center  align-items-center sidebar ">
+                <Offcanvas.Body className="d-flex justify-content-center  align-items-center sidebar">
                   <Nav className="d-flex   align-items-center align-items-center  mx-auto  ">
                     <motion.div
                       whileHover={{ scale: 1.2 }}
@@ -49,7 +51,7 @@ const Header = (props) => {
                         className="nav-link"
                         to="/React-Apple"
                         href="#"
-                        onClick={() => (this.expand = "")}
+                        
                       >
                         {" "}
                         Apple
@@ -64,7 +66,7 @@ const Header = (props) => {
                         className="nav-link"
                         to="/About"
                         href="#"
-                        
+                        data-bs-dismiss="offcanvas"
                       >
                         About
                       </NavLink>

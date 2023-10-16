@@ -4,19 +4,26 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import Logo from "../assets/image/thumb-1920-937133-removebg-preview.png"
+import Logo from "../assets/image/thumb-1920-937133-removebg-preview.png";
 import { motion, useAnimation } from "framer-motion";
 import Footer from "./Footer";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const Xiaomi = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <motion.div
         initial={{ opacity: 0, y: 98 }}
         animate={{ opacity: 1, y: 1 }}
-        transition={{type: "spring", duration: 0.6 }}
+        transition={{ type: "spring", duration: 0.6 }}
       >
         <Container>
           <div>
