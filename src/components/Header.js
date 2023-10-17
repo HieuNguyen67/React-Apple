@@ -13,7 +13,17 @@ import { motion, useAnimation } from "framer-motion";
 import "./custom.scss"
 
 const Header = (props) => {
-  const location = useLocation();
+   const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 80) {
+            setColorchange(true);
+        }
+        else {
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
 
   return (
     <>
@@ -21,7 +31,13 @@ const Header = (props) => {
       <div>
         {" "}
         <ScrollIndicator />
-        <Navbar expand="lg" className="bg-body-tertiary shadow-sm" fixed="top">
+        <Navbar
+          expand="lg"
+          className={colorChange ? "navbar colorChange" : "navbar"}
+          fixed="top"
+        >
+          {" "}
+          {/* #f8f9fa */}
           <Container className="my-2">
             <NavLink to="/React-Apple" className=" decorate ">
               <Navbar.Brand to="/">
@@ -48,10 +64,17 @@ const Header = (props) => {
                       whileTap={{ scale: 0.8 }}
                     >
                       <NavLink
-                        className="nav-link"
+                        className="nav-link "
                         to="/React-Apple"
                         href="#"
-                        
+                        style={({ isActive, isPending, isTransitioning }) => {
+                          return {
+                            fontWeight: isActive ? "bold" : "",
+                            borderBottom: isActive ? "2px solid Navy" : "",
+                            color: isPending ? "red" : "black",
+                            viewTransitionName: isTransitioning ? "slide" : "",
+                          };
+                        }}
                       >
                         {" "}
                         Apple
@@ -63,10 +86,18 @@ const Header = (props) => {
                       whileTap={{ scale: 0.8 }}
                     >
                       <NavLink
-                        className="nav-link"
+                        className="nav-link "
                         to="/About"
                         href="#"
                         data-bs-dismiss="offcanvas"
+                        style={({ isActive, isPending, isTransitioning }) => {
+                          return {
+                            fontWeight: isActive ? "bold" : "",
+                            borderBottom: isActive ? "2px solid Navy" : "",
+                            color: isPending ? "red" : "black",
+                            viewTransitionName: isTransitioning ? "slide" : "",
+                          };
+                        }}
                       >
                         About
                       </NavLink>
