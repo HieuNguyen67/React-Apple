@@ -25,21 +25,17 @@ function App() {
       <div className="app-container ">
         <ScrollIndicator />
         <Header />
-        <br />
-        <br />
-        <br />
-        <br />
-        <BackToTop />{" "}
+        <div className='mt-5 pt-5'></div>
         <Routes>
-          <Route path="/React-Apple" element={<HomeApple />}  />
-          <Route path="/user" element={<Login />}  />
-          <Route path="/4" element={<LoginQR />}  />
-          <Route path="/5" element={<LoginwithEmail  />} />
-          <Route path="/10" element={<LoginwithEmail1  />} />
-          <Route path="/SignUp" element={<SignUp />}  />
-          <Route path="/SignUpWithSDT" element={<SignUpWithSDT />}  />
-          <Route path="/SignUpWithEmail" element={<SignUpWithEmail  />} />
-          <Route path="/About" element={<Xiaomi />}  />
+          <Route path="/React-Apple" element={<HomeApple />} />
+          <Route path="/user" element={<Login />} />
+          <Route path="/4" element={<LoginQR />} />
+          <Route path="/5" element={<LoginwithEmail />} />
+          <Route path="/10" element={<LoginwithEmail1 />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/SignUpWithSDT" element={<SignUpWithSDT />} />
+          <Route path="/SignUpWithEmail" element={<SignUpWithEmail />} />
+          <Route path="/About" element={<Xiaomi />} />
         </Routes>
       </div>
     </>

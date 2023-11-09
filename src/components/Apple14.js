@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import icontrade from "../assets/image/icon_trade_in__mqu4q4oi88i2_large.png";
@@ -166,70 +167,7 @@ const Apple14 = () => {
                 </Card>
               </motion.div>
             </div>
-            <div>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Card
-                  style={{
-                    width: "24rem",
-                    height: "20rem",
-                    border: "0px solid white",
-                  }}
-                  className="rounded-5 mx-auto p-3 shadow-sm"
-                >
-                  <Card.Body>
-                    <Row className="d-flex flex-column">
-                      <Col>
-                        <img src={icon3} />
-                      </Col>
-                      <br />
-                      <Col>
-                        <h3 className="col-10">
-                          Get flexible delivery and easy pickup.
-                        </h3>
-                      </Col>
-
-                      <Col>
-                        <p style={{ fontSize: "18px" }}>
-                          Choose two‑hour delivery from an Apple Store, free
-                          delivery, or easy pickup options.
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </motion.div>
-            </div>
-            <div>
-              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                <Card
-                  style={{
-                    width: "24rem",
-                    height: "20rem",
-                    border: "0px solid white",
-                  }}
-                  className="rounded-5 mx-auto p-3 shadow-sm"
-                >
-                  <Card.Body>
-                    <Row className="d-flex flex-column">
-                      <Col>
-                        <img src={icon4} />
-                      </Col>
-                      <br />
-                      <Col>
-                        <h3 className="col-10">Get to know your new iPhone.</h3>
-                      </Col>
-
-                      <Col>
-                        <p style={{ fontSize: "18px" }}>
-                          Learn how to get the most out of your new iPhone with
-                          a free one‑on‑one Personal Session.
-                        </p>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              </motion.div>
-            </div>
+           
           </Carousel>
         </div>
       </motion.div>
