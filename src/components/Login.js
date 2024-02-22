@@ -179,63 +179,7 @@ const Login = (props) => {
               <Col></Col>
             </Row>
           </div>
-          <p className="text-center my-4">
-            <Row className="d-flex flex-row ">
-              <Col className="col-3 col-md my-md-0 my-3">
-                <a href="https://m.levelgame-gift.com/#/food-tile-fun/invite?referrer=94ZA4F34">
-                  <Filter1Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.puzzle-cash.com/#/jigsaw-it-all/invite?referrer=Q4BAGT5H">
-                  <Filter2Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.levelgame-gift.com/#/swipe-hero/invite?referrer=B4RA4TRJ">
-                  <Filter3Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.mergegame-gift.com/#/pixel-weapon-merge/invite?referrer=H4RA6TEM">
-                  <Filter4Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.levelgame-gift.com/#/killer-coming/invite?referrer=E43A4TD7">
-                  <Filter5Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.mergegame-gift.com/#/monster-merge/invite?referrer=34VAHTD5">
-                  <Filter6Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.levelgame-gift.com/#/pop-it-up/invite?referrer=G48AQT6N">
-                  <Filter7Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.levelgame-gift.com/#/pocket-tank-battle/invite?referrer=F4ZAZTQ7">
-                  <Filter8Icon fontSize="large" />
-                </a>
-              </Col>
-              <Col className="col-3 col-md  my-md-0 my-3">
-                {" "}
-                <a href="https://m.mergegame-gift.com/#/gems-and-blocks/invite?referrer=U4PAFTUN">
-                  <Filter9Icon fontSize="large" />
-                </a>
-              </Col>
-            </Row>
-          </p>
+          
         </Container>
       </motion.div>
     </>
