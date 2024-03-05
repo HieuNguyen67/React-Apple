@@ -4,7 +4,6 @@
   "homepage": "https://hieunguyen67.github.io/React-Apple/",
   "private": true,
   "dependencies": {
-
     "@mui/icons-material": "^5.14.9",
     "@mui/joy": "^5.0.0-beta.9",
     "@mui/material": "^5.14.12",
@@ -23,7 +22,6 @@
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
-    "react-typed": "^1.2.0",
     "sass": "^1.68.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.8",
