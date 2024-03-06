@@ -38,7 +38,7 @@ const Login = (props) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Container className="mt-5 mx-auto  ">
+        <Container className="mt-5 mx-auto mb-5  ">
           <div>
             <Row>
               <Col />

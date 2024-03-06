@@ -10,7 +10,6 @@ import Apple9 from "./Apple9";
 import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
 import Apple11 from './Apple11';
-import Footer from './Footer';
 import { motion } from "framer-motion";
 const HomeApple = () => {
 
@@ -44,7 +43,6 @@ const HomeApple = () => {
 
         <Apple11 />
 
-        <Footer />
       </motion.div>
     </>
   );

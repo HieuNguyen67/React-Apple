@@ -17,6 +17,7 @@ import SignUpWithEmail from './components/SignUpWithEmail';
 import BackToTop from './components/backtotop';
 import Xiaomi from './components/Xiaomi';
 import ScrollIndicator from './components/ScrollIndicator';
+import Footer from './components/Footer';
 function App() {
 
 
@@ -37,6 +38,8 @@ function App() {
           <Route path="/SignUpWithEmail" element={<SignUpWithEmail />} />
           <Route path="/About" element={<Xiaomi />} />
         </Routes>
+        <Footer/>
+       
       </div>
     </>
   );
