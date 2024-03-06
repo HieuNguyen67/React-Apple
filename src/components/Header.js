@@ -39,7 +39,7 @@ const Header = (props) => {
           {" "}
           {/* #f8f9fa */}
           <Container className="my-2">
-            <NavLink to="/React-Apple" className=" decorate ">
+            <NavLink to="/" className=" decorate ">
               <Navbar.Brand to="/">
                 <img
                   alt=""
@@ -65,7 +65,7 @@ const Header = (props) => {
                     >
                       <NavLink
                         className="nav-link "
-                        to="/React-Apple"
+                        to="/"
                         href="#"
                         style={({ isActive, isPending, isTransitioning }) => {
                           return {

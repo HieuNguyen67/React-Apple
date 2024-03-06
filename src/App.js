@@ -27,7 +27,7 @@ function App() {
         <Header />
         <div className='mt-5 pt-5'></div>
         <Routes>
-          <Route path="/React-Apple" element={<HomeApple />} />
+          <Route path="/" element={<HomeApple />} />
           <Route path="/user" element={<Login />} />
           <Route path="/4" element={<LoginQR />} />
           <Route path="/5" element={<LoginwithEmail />} />

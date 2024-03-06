@@ -29,7 +29,7 @@ const Footer = () => {
               <p className="text-center text-light">
                 <h1>Menu</h1>
                 <br />
-                <NavLink to="/React-Apple" className="text-decoration-none">
+                <NavLink to="/" className="text-decoration-none">
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
