@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-const Footer = () => {
+const CompFooter = () => {
   return (
     <>
       <div className="boxFooter">
@@ -66,4 +66,4 @@ const Footer = () => {
     </>
   );
 };
-export default Footer;
+export default CompFooter;
