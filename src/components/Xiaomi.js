@@ -12,6 +12,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Header from "./Header";
 
 const Xiaomi = () => {
   const [show, setShow] = useState(false);
@@ -20,6 +21,8 @@ const Xiaomi = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+      {" "}
+      <Header />
       <motion.div
         initial={{ opacity: 0, y: 98 }}
         animate={{ opacity: 1, y: 1 }}
@@ -107,9 +110,7 @@ const Xiaomi = () => {
             </p>
           </Row>
         </Container>
-    
       </motion.div>
-      
     </>
   );
 };

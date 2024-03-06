@@ -11,12 +11,15 @@ import SlideCroll from "./SlideshowIndicators";
 import Explore from "./Explore";
 import Apple11 from './Apple11';
 import { motion } from "framer-motion";
+import Header from './Header';
 const HomeApple = () => {
 
 
 
   return (
     <>
+      {" "}
+      <Header />
       <motion.div
         initial={{ opacity: 0, y: 98 }}
         animate={{ opacity: 1, y: 1 }}
@@ -42,7 +45,6 @@ const HomeApple = () => {
         <Apple9 />
 
         <Apple11 />
-
       </motion.div>
     </>
   );

@@ -22,6 +22,7 @@ import Filter6Icon from "@mui/icons-material/Filter6";
 import Filter7Icon from "@mui/icons-material/Filter7";
 import Filter8Icon from "@mui/icons-material/Filter8";
 import Filter9Icon from "@mui/icons-material/Filter9";
+import Header from "./Header";
 const Login = (props) => {
   const responseFacebook = (response) => {
     console.log(response);
@@ -33,6 +34,7 @@ const Login = (props) => {
 
   return (
     <>
+    <Header/>
       <motion.div
         initial={{ opacity: 0, scale: 0.3 }}
         animate={{ opacity: 1, scale: 1 }}

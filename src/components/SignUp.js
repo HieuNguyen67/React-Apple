@@ -11,6 +11,7 @@ import { NavLink } from 'react-router-dom';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import { motion } from "framer-motion";
+import Header from './Header';
 const Login=(props)=>{
   const responseFacebook = (response) => {
     console.log(response);
@@ -22,6 +23,7 @@ const Login=(props)=>{
 
     return (
       <>
+      <Header/>
         <motion.div
           initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 1, scale: 1 }}

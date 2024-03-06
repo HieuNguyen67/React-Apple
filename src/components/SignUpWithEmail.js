@@ -6,13 +6,14 @@ import Button from 'react-bootstrap/Button';
 import { NavLink } from 'react-router-dom';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import './body.scss'
+import Header from "./Header";
 
 
 
 
 const SignUpWithSDT=()=>{
     return(<>
-    
+    <Header/>
     <Container className="mt-5 mx-auto  ">
     <div>
         <Row>
