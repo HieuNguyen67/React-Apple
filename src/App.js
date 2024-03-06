@@ -25,7 +25,7 @@ function App() {
       <div className="app-container ">
         <ScrollIndicator />
         <Header />
-        <div className='mt-5 pt-5'></div>
+        <div className="mt-5 pt-5"></div>
         <Routes>
           <Route path="/" element={<HomeApple />} />
           <Route path="/user" element={<Login />} />
